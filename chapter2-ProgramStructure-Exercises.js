@@ -9,11 +9,11 @@ function looping_a_triangle() {
 
 function fizzbuzz() {
 	for(let i = 1; i <= 100; i++) {
-		fb = ""
-		if(i % 3 == 0) {
+		fb = "";
+		if(i % 3 === 0) {
 			fb += "Fizz";
 		}
-		if(i % 5 == 0) {
+		if(i % 5 === 0) {
 			fb += "Buzz";
 		}
 		
@@ -27,21 +27,21 @@ function fizzbuzz() {
 
 function chessBoard(dim=8) {
 	
-	let a = ""
-	let b = ""
+	let a = "";
+	let b = "";
 	
 	for (let i=0; i<dim; i++){
-		if(i%2==0){
-			a += " "
+		if(i%2===0){
+			a += " ";
 			b += "#"
 		}else{
-			a += "#"
+			a += "#";
 			b += " "
 		}
 	}
 	
 	for (let i=0; i<dim; i++){
-		if(i%2==0){
+		if(i%2===0){
 			console.log(a)
 		}else{
 			console.log(b)
@@ -52,4 +52,4 @@ function chessBoard(dim=8) {
 
 // looping_a_triangle()
 // fizzbuzz()
-chessBoard(16)
+chessBoard(16);

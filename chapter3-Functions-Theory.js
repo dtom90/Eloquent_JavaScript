@@ -29,6 +29,7 @@ console.log(power(2, 10));
 
 // Bindings declared with let and const are local to the block that they are declared in
 let x = 10;
+// noinspection ConstantIfStatementJS
 if(true) {
   let y = 20;
   let z = 30;
@@ -91,3 +92,14 @@ console.log("The future says:", future());
 function future(){
   return "Trump will get re-elected.";
 }
+
+/* Closures */
+
+function multipliter(factor){
+  return number => factor * number
+}
+
+const twice = multipliter(2);
+console.log(twice(5));
+// => 10
+
